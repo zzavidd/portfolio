@@ -1,12 +1,5 @@
 import type { TypographyOptions } from '@mui/material/styles/createTypography';
-import { Calistoga, Mulish } from 'next/font/google';
-
-export const calistoga = Calistoga({
-  display: 'swap',
-  preload: true,
-  subsets: ['latin'],
-  weight: ['400'],
-});
+import { Mulish } from 'next/font/google';
 
 export const mulish = Mulish({
   display: 'swap',
@@ -18,6 +11,10 @@ export const mulish = Mulish({
 
 const typography: TypographyOptions = {
   fontFamily: mulish.style.fontFamily,
+  fontWeightRegular: 800,
+  h1: {
+    fontWeight: 900,
+  },
 };
 
 export default typography;

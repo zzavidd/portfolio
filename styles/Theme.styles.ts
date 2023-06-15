@@ -2,12 +2,12 @@ import type { ThemeOptions } from '@mui/material';
 import { createTheme } from '@mui/material';
 
 import components from './Components.styles';
-import { darkPalette } from './Palette.styles';
+import palette from './Palette.styles';
 import typography from './Typography.styles';
 
 export const themeOptions: ThemeOptions = {
   components,
-  palette: darkPalette,
+  palette,
   shape: {
     borderRadius: 10,
   },
